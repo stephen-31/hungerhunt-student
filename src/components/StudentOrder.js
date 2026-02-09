@@ -131,7 +131,7 @@ const StudentOrder = () => {
           onChange={(e) => setSearchQuery(e.target.value)}
         />
         <div style={styles.catRow}>
-          {['All', 'Snacks', 'Drinks', 'Meals', 'Healthy', 'Sweet'].map(cat => (
+          {['All', 'Health Care', 'Dry Fruits', 'Stationery', 'Fruits', 'Biscuits'].map(cat => (
             <button key={cat} onClick={() => setActiveCategory(cat)}
               style={{...styles.catBtn, background: activeCategory === cat ? '#FF7622' : '#F4F4F4', color: activeCategory === cat ? '#FFF' : '#666'}}>
               {cat}
